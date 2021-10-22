@@ -41,3 +41,4 @@ for i in personS[::-2]:
     print(i)
 Name = "Dariste"
 print(Name[::-1])
+print()
