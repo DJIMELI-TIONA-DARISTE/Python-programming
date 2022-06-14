@@ -55,6 +55,4 @@ print(*infos) #unpack tuple equivalent à print(infos[0], infos[1], infos[2])
 #-----------------------SLICES-----------------------
 person = ("John", "Doe", "dariste", "jean","paul")
 
-for i in person[0:3]:
-    print(i)
     
