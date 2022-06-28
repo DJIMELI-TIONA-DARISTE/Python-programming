@@ -4,7 +4,7 @@ def tri_perso (e):
 
 def pizzas_exist(list, new_pizza):
     for i in list:
-        if i == new_pizza.lower():
+        if i == new_pizza.lower() or new_pizza == "":
             return True
     return False
 
