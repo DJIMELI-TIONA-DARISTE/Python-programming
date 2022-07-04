@@ -80,17 +80,30 @@ print(name_join)
 # Split means to split the string
 name_split = name_join.split("-")
 print(name_split)
-"""
+
 #----------------index,find and count--------------------
 #        0       1       2       3           4
-name =['John', 'Doe', 'Smith', 'dariste', 'Linda']
+name =['John', 'Doe', 'Smith', 'dariste', 'Linda','John']
 
 element_search = "John"
-if element_search in name:
+nb_occurance = name.count(element_search) # count the number of occurance of the element
+print ("number of accurance",nb_occurance)
+if nb_occurance > 0:
     print(name.index(element_search))
 else:
     print("not found")
+"""
+#        0       1       2       3           4
+name =['John', 'Doe', 'Smith', 'dariste', 'Linda','John']
 
+length_name = [len(non) for non in name if len(non) > 5  ]
+name_with_j=[non for non in name if "i" in non]
+#print(length_name)
+#print(name_with_j)
+
+a = [True, True, False, True, True]
+print(any(a))
+print(all(a))
 
 
 
