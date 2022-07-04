@@ -1,6 +1,6 @@
 # the collections : LIST / TUPLE 
 # Append / Extend / += / Insert
-"""name =['John', 'Doe', 'Smith']
+name =['John', 'Doe', 'Smith']
 
 additional_name = ["dariste", "jean"]
 
@@ -92,7 +92,7 @@ if nb_occurance > 0:
     print(name.index(element_search))
 else:
     print("not found")
-"""
+
 #        0       1       2       3           4
 name =['John', 'Doe', 'Smith', 'dariste', 'Linda','John']
 
@@ -105,6 +105,17 @@ a = [True, True, False, True, True]
 print(any(a))
 print(all(a))
 
+#-----------------test if the word have number(any/isdigit)--------------------
+def chaine_contient_chiffre(chaine):
+    return any([c.isdigit() for c in chaine])
+
+name = input("Enter your name ")
+if name=="":
+    print("the name is emthy")
+elif chaine_contient_chiffre(name):
+    print("This name is not valid, they do not have a number")
+else:
+    print("Good morning " +name)
 
 
 
